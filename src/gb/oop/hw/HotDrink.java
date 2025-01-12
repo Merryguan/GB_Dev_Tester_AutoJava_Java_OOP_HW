@@ -1,6 +1,6 @@
 package gb.oop.hw;
 
-public class HotDrink extends Product{
+public class HotDrink extends Product {
 
     private Integer volume;
     private Integer temperature;

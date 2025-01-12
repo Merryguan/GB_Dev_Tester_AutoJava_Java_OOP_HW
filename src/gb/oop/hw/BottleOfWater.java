@@ -1,14 +1,14 @@
 package gb.oop.hw;
 
-public class BottleOfWater extends Product{
+public class BottleOfWater extends Product {
 
     private Integer volume;
 
-    public BottleOfWater(String name, Integer price){
+    public BottleOfWater(String name, Integer price) {
         super(name, price);
     }
 
-    public BottleOfWater(String name, Integer price, Integer volume){
+    public BottleOfWater(String name, Integer price, Integer volume) {
         super(name, price);
         this.volume = volume;
     }

@@ -2,7 +2,7 @@ package gb.oop.hw;
 
 import java.util.List;
 
-public class HotDrinkVendingMachine implements VendingMachine{
+public class HotDrinkVendingMachine implements VendingMachine {
 
     private final List<Product> productList;
     private Integer money;
@@ -22,12 +22,12 @@ public class HotDrinkVendingMachine implements VendingMachine{
         return null;
     }
 
-    public HotDrink getProduct(String name, Integer volume, Integer temperature){
+    public HotDrink getProduct(String name, Integer volume, Integer temperature) {
         for (Product product: productList) {
             if (product instanceof HotDrink) {
                 if (product.getName().equals(name)
                         && ((HotDrink) product).getVolume().equals(volume)
-                        && ((HotDrink) product).getTemperature().equals(temperature)){
+                        && ((HotDrink) product).getTemperature().equals(temperature)) {
                     return (HotDrink) product;
                 }
             }

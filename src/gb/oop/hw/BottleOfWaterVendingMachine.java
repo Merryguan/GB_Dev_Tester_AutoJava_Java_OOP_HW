@@ -2,7 +2,7 @@ package gb.oop.hw;
 
 import java.util.List;
 
-public class BottleOfWaterVendingMachine implements VendingMachine{
+public class BottleOfWaterVendingMachine implements VendingMachine {
 
     private final List<Product> productList;
     private Integer money;
@@ -22,7 +22,7 @@ public class BottleOfWaterVendingMachine implements VendingMachine{
         return null;
     }
 
-    public BottleOfWater getProduct(String name, Integer volume){
+    public BottleOfWater getProduct(String name, Integer volume) {
         for (Product product: productList) {
             if (product instanceof BottleOfWater) {
                 if (product.getName().equals(name) && ((BottleOfWater) product).getVolume() == volume){
