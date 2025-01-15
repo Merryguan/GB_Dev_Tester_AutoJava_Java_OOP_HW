@@ -1,4 +1,4 @@
-package gb.oop.hw;
+package gb.oop.hw.vending_machine;
 
 import java.util.ArrayList;
 import java.util.List;

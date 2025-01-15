@@ -1,13 +1,13 @@
-package gb.oop.hw;
+package gb.oop.hw.vending_machine;
 
 import java.util.List;
 
-public class HotDrinkVendingMachine implements VendingMachine {
+public class BottleOfWaterVendingMachine implements VendingMachine {
 
     private final List<Product> productList;
     private Integer money;
 
-    public HotDrinkVendingMachine(List<Product> productList) {
+    public BottleOfWaterVendingMachine(List<Product> productList) {
         this.productList = productList;
     }
 
@@ -22,13 +22,11 @@ public class HotDrinkVendingMachine implements VendingMachine {
         return null;
     }
 
-    public HotDrink getProduct(String name, Integer volume, Integer temperature) {
+    public BottleOfWater getProduct(String name, Integer volume) {
         for (Product product: productList) {
-            if (product instanceof HotDrink) {
-                if (product.getName().equals(name)
-                        && ((HotDrink) product).getVolume().equals(volume)
-                        && ((HotDrink) product).getTemperature().equals(temperature)) {
-                    return (HotDrink) product;
+            if (product instanceof BottleOfWater) {
+                if (product.getName().equals(name) && ((BottleOfWater) product).getVolume() == volume){
+                    return (BottleOfWater) product;
                 }
             }
         }

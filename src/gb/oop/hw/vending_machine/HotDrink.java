@@ -1,4 +1,4 @@
-package gb.oop.hw;
+package gb.oop.hw.vending_machine;
 
 public class HotDrink extends Product {
 

@@ -15,7 +15,7 @@ public class StreamService {
         this(new ArrayList<>());
     }
 
-    public List<Stream> getSortedStreamList() {
+    public List<Stream> getSortedStreamList(List<Stream> streamList) {
         streamList.sort(new StreamComparator());
         return streamList;
     }

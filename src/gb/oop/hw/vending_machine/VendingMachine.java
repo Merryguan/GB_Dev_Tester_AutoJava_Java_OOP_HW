@@ -1,7 +1,4 @@
-package gb.oop.hw;
-
-import java.util.ArrayList;
-import java.util.List;
+package gb.oop.hw.vending_machine;
 
 public interface VendingMachine {
     Product getProduct(String name);
